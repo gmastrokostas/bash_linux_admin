@@ -36,6 +36,9 @@ paste -d '' - - - < text
 #Cut a field and use a dilimeter
 cut -d: -f3 /some_file
 
+#Capture original state of file and directory ownership
+find /home/    -printf "%u:%g %p\t\n" >> files
+
 
 
 
